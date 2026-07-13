@@ -12,9 +12,9 @@ A from-scratch NumPy implementation of a feed-forward artificial neural network 
 
 > From-scratch NumPy ANN for Fruit-360 image classification with sigmoid layers, MSE loss, mini-batch updates, manual backpropagation, and recorded training curves.
 
-## AI/ML status
+## Learning method
 
-**AI/ML status: yes, this is a genuine machine-learning project that implements an artificial neural network and trains it with backpropagation.** The tracked training script contains the complete learning mechanics rather than calling a high-level model API:
+This is a **machine-learning project implementing an artificial neural network from scratch**. The tracked training script contains the complete learning mechanics:
 
 - A feed-forward network with two hidden layers: 150 and 60 sigmoid neurons.
 - A 4-neuron output layer whose predicted class is selected with `argmax`.
@@ -24,7 +24,7 @@ A from-scratch NumPy implementation of a feed-forward artificial neural network 
 - Stochastic shuffling and mini-batch-shaped data preparation.
 - NumPy matrix operations for activations, gradients, and weight updates.
 
-The implementation is educational and interpretable: each layer, activation, gradient helper, and update rule is visible in Python. It is not a CNN, does not use transfer learning, and does not use TensorFlow or PyTorch in the tracked training file. The saved result folders include experiments named `Vectorized`, `SoftMax`, and `Loop`, but only the loop-based sigmoid/MSE implementation is present as source in this repository.
+The implementation is educational and interpretable: each layer, activation, gradient helper, and update rule is visible in Python. The tracked training file uses a fully connected network with sigmoid/MSE components and NumPy matrix operations rather than a deep-learning framework. The saved result folders include experiments named `Vectorized`, `SoftMax`, and `Loop`, but only the loop-based sigmoid/MSE implementation is present as source in this repository.
 
 ## What the project demonstrates
 
@@ -164,8 +164,4 @@ The tracked Python file passes syntax compilation:
 python3 -m py_compile Backpropagation_200_Loop_v2.py
 ```
 
-The full training run was not executed in this environment because the imported `ANN_Project_Assets` module and dataset are not present. The preview image uses a real MSE plot committed in the repository and the exact layer sizes, loss, update path, and training settings in the source; it is a software/experiment visualization rather than AI-generated fruit artwork.
-
-## License
-
-No license file is currently included. Add a license before distributing or reusing the project outside its original educational context.
+The full training run was not executed in this environment because the imported `ANN_Project_Assets` module and dataset are not present. The preview image uses a real MSE plot committed in the repository and the exact layer sizes, loss, update path, and training settings in the source.
